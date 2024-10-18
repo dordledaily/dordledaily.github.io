@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MikhaD/wordle.git"
+    "url": "git+https://github.com/playwordleunlimited/playwordleunlimited.github.io.git"
   },
   "keywords": [],
   "author": "MikhaD",
   "bugs": {
-    "url": "https://github.com/MikhaD/wordle/issues"
+    "url": "https://github.com/playwordleunlimited/issues"
   },
-  "homepage": "https://github.com/MikhaD/wordle#readme",
+  "homepage": "https://github.com/playwordleunlimited/#readme",
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^2.0.2",
     "@tsconfig/svelte": "^3.0.0",

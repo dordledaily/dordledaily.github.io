@@ -1,53 +1,321 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-
-	<meta name="theme-color" content="#6aaa64" />
-	<link rel="manifest" href="manifest.json">
-	<link rel="shortcut icon" href="img/logo_32x32.png" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/logo_192x192.png" />
-	<link rel="stylesheet" href="global.css">
-
-	<meta name="author" content="Playwordle.UK">
-	<meta name="description"
-		content="Wordle Unlimited with infinite, hourly and daily modes. Play Wordle Unlimited times, daily and hourly mode.">
-	<meta name="keywords"
-		content="wordle, infinite wordle, wordle unlimited, infinate wordle, infinte wordle, unlimited, daily wordle, wordle+, word game, puzzle, game">
-
-	<!-- FB Meta Tags -->
+<!DOCTYPE html><html lang="en" prefix="og: http://ogp.me/ns#"><head>
+    <meta charset="utf-8">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" href="img/logo_32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/logo_192x192.png" />
+    <meta name="author" content="Playwordle.UK">
+    <meta name="description" content="Wordle Unlimited with infinite, hourly and daily modes. Play Wordle Unlimited times, daily and hourly mode.">
+    <meta name="keywords" content="wordle, infinite wordle, wordle unlimited, infinate wordle, infinte wordle, unlimited, daily wordle, wordle+, word game, puzzle, game">
+    <link href="https://www.playwordle.uk/css/main.min.css" rel="stylesheet">
+    <link href="https://www.playwordle.uk/css/wordly.min.css" rel="stylesheet">
+    <meta name="csrf-token" content="z9b3rfs9g7txJMaacJq6WVB6XxglubW3bP77OeFm">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>Wordle Unlimited - Play unlimited wordle</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wordle Unlimited" />
+    <meta name="author" content="Playwordle.UK">
+   <meta name="description" content="Wordle Unlimited with infinite, hourly and daily modes. Play Wordle Unlimited times, daily and hourly mode.">
+   <meta name="keywords" content="wordle, infinite wordle, wordle unlimited, infinate wordle, infinte wordle, unlimited, daily wordle, wordle+, word game, puzzle, game">
+    <meta property="og:url" content="https://playwordleunlimited.github.io/" />
+    <!-- FB Meta Tags -->
 	<meta property="og:url" content="https://playwordleunlimited.github.io">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Wordle Unlimited | An unlimited wordle guessing game">
 	<meta property="og:description" content="Wordle Unlimited with infinite. Guess the word in 6 tries. Play daily, hourly and infinite modes.">
 	<meta property="og:image" content="https://playwordleunlimited.github.io/wordle/img/og_1200x630.png">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<meta name="google-site-verification" content="##" />
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RHN319RJ6V"></script>
-	<script>
-		if (document.location.origin === "https://playwordleunlimited.github.io") {
-			// Google Analytics
-			window.dataLayer = window.dataLayer || [];
-			function gtag() { dataLayer.push(arguments); }
-			gtag('js', new Date());
-			gtag('config', 'G-##');
-
-			// PWA Service worker
-			if ("serviceWorker" in navigator) navigator.serviceWorker.register("./sw.js");
-		}
-	</script>
-
-	
-	<!-- changed to something more suited to being the title of a tab in App.svelte. This title is for SEO -->
-	<title>Wordle Unlimited - Play unlimited wordle</title>
-  <script type="module" crossorigin src="index-v1.5.2.js"></script>
-  <link rel="stylesheet" href="index-v1.5.2.css">
+    	<meta content='general' name='rating'/>
+   	 <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Wordle Unlimited",
+        "description": "Wordle Unlimited with infinite, hourly and daily modes. Play Wordle Unlimited times, daily and hourly mode.",
+        "image": "https://playwordleunlimited.github.io/wordle/img/og_1200x630.png",
+        "genre": "Puzzle",
+        "gamePlatform": "Web browser",
+        "monetization": {
+            "@type": "MonetizationPolicy",
+            "policyType": "AdsSupported"
+        },
+        "review": {
+            "author": {
+                "@type": "Person",
+                "name": "Conor Sheehan"
+            },
+        	"publisher": {
+            "@type": "Organization",
+            "name": "Github"
+       		 },
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": 5,
+                "bestRating": 5,
+                "worstRating": 1
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD",
+            "url": "https://playwordleunlimited.github.io/"
+        }
+    }</script>
+    <!-- share -->
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=664217ba892a210019ff848d&product=sop' async='async'></script>
 </head>
+<body class=" ">
+<div class="page">
+    <div class="page__wrapper">
 
-<body>
-</body>
+    <section class="section section--full section--main">
+        <div class="container no-pading">
 
-</html>
+            <div class="wrap">
+    <div class="main">
+    <iframe width="100%" height="700"  id="game-content" frameborder="0" allow="autoplay" allowfullscreen="" seamless="" scrolling="no" src="https://playwordleunlimited.github.io/game.html"></iframe>
+    </div>
+</div>            
+            
+            <!--<div class="ad_link"><div class="ad_link_btn">-->
+            <!--<a href="https://wordfind.org/" target="_blank">-->
+            <!--      <svg>-->
+            <!--          <use xlink:href="images/spritesvg.svg#ic_wordfind"></use>-->
+            <!--      </svg>-->
+            <!--Word Finder</a>-->
+            <!--<br>A smart assistant for word search-->
+            <!--</div></div>-->
+            
+        </div>
+    </section>
+    
+    <section class="section section--grey">
+    <div class="container">
+        <div class="wordle-text">
+            <h2 class="info_text">Similar Games</h2>
+        </div>
+        <div class="games">
+            <a href="https://www.playwordle.uk/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/wordlegame-play.png?v2" alt="Wordle UK">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Wordle UK</div>
+                <div class="game-item__text">Guess the hidden word</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/dordle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/dordlewordle-play.png" alt="Dordle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Dordle</div>
+                <div class="game-item__text">Solve 2 Wordles at once</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/quordle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/quordlewordle-play.png" alt="Quordle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Quordle</div>
+                <div class="game-item__text">Solve 4 Wordles at once</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/octordle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/octordlewordle-play.png" alt="Octordle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Octordle</div>
+                <div class="game-item__text">Solve 8 Wordles at once</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/squares/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/squares-play.gif" alt="Squares Game">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Squares</div>
+                <div class="game-item__text">New word search game</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/combinations/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/combinations-play.png" alt="Combinations">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Combinations</div>
+                <div class="game-item__text">Combine letters and create words</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/connections/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/connections-play.png" alt="Connections">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Connections</div>
+                <div class="game-item__text">Group words by topic</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/sedecordle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/sedecordle-play.png" alt="Sedecordle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Sedecordle</div>
+                <div class="game-item__text">Solve 16 Wordles at once</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/phrazle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/phrazle-play.png" alt="Phrazle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Phrazle</div>
+                <div class="game-item__text">Guess the Phrase</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/weaver/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/weaver-play.png" alt="Weaver">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Weaver</div>
+                <div class="game-item__text">Word Ladder Game</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/waffle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/waffle-play.png" alt="Waffle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Waffle</div>
+                <div class="game-item__text">Solve 6 words in 15 swaps</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/wordsearch/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/wordsearch-play.png" alt="Word Search">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Word Search</div>
+                <div class="game-item__text">Find words in the grid</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/globle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/globle-play.png" alt="Globle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Globle</div>
+                <div class="game-item__text">Guess the hidden country</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/worldle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/worldle-play.png" alt="Worldle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Worldle</div>
+                <div class="game-item__text">Guess the country by shape</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/crosswordle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/unwordle-play.png" alt="Crosswordle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Crosswordle</div>
+                <div class="game-item__text">Sudoku meets Wordle</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.playwordle.uk/numberle/" class="game-item" target="_blank">
+              <div class="game-item__img">
+                <img src="/images/numberle-play.png" alt="Numberle">
+              </div>
+              <div class="game-item__info">
+                <div class="game-item__title">Numberle</div>
+                <div class="game-item__text">Math game like Wordle</div>
+                <div class="game-item__bottom">
+                   <div class="game-item__play">Play</div>
+                </div>
+              </div>
+            </a>
+            
+        </div>
+    </div>
+</section>
+    <section class="section section--green">
+        <div class="container">
+            <div class="headline">
+                <h1 class="headline__title">Wordle Unlimited</h1>
+                <h2 class="headline__text">Wordle Unlimited is an extended, unbounded version of the popular online word puzzle game Wordle. While the original game, created by Jonathan Blow and later popularized by Josh Wardle, has a daily puzzle with a fixed word, Wordle Unlimited allows players to play as many rounds as they want, without any daily limit. This makes it a more casual and continuous experience compared to the official Wordle game.</h2>
+            </div>
+        </div>
+    </section>
+    
+<div class="sharethis-inline-share-buttons"></div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__bottom">
+                <div class="footer__copir"><strong>Wordle Unlimited</strong> © 2024</div>
+                <ul class="footer__links">
+                    <li><a href="https://github.com/playwordleunlimited/playwordleunlimited.github.io/issues">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+</body></html>
